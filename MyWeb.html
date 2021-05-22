@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>My Web</title>
+    <style>
+        body{
+            font-family: 'Reggae One', cursive;
+        }
+        .navbar{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .main {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .navbar-brand i {
+            left: -1px;
+            color: gold;
+        }
+        p{
+            margin-top: 18px;
+        }
+        #logo img:hover{
+            /* position: relative;
+            left: 5rem; */
+            animation: logoAnim 1.5s infinite alternate-reverse;
+            
+        }
+        @keyframes logoAnim{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        #listItem {
+            color: yellow;
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: "Sofia", sans-serif;
+            border-right: 4px solid black;
+            
+            
+        }
+        
+        #homepage p{
+            text-align: center;
+        }
+        #listItem:hover{
+            color: red;
+            cursor: pointer;
+        }
+        
+        #homepage {
+            background-image: url("https://source.unsplash.com/1600x900/?programming");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        #about {
+            background-image: url("https://source.unsplash.com/1600x900/?html,css");
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #contact {
+            background-image: url("https://source.unsplash.com/1600x900/?facebook,twitter,github");
+            background-repeat: no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .navbar{
+            position:fixed;
+            width: 100%;
+            top: 0;
+        } */
+        #logo {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        img {
+            margin-top: 90px;
+            margin-left: 30px
+        }
+
+        .info {
+
+            height: 20px;
+            width: 50px;
+            background-color: lightsalmon;
+        }
+
+        #SM {
+
+            width: 35rem;
+            height: 28rem;
+            background-color: rgb(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+
+            /* align-items: center; */
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 3rem;
+
+        }
+
+        .btns {
+            margin-left: 5%;
+            margin-top: 0.9rem;
+            height: 15%;
+            width: 80%;
+            background-color: aqua;
+            border-radius: 2rem;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .btns:hover {
+            background-color: lightgreen;
+
+        }
+
+        .btns:hover i {
+            font-size: 2.5rem;
+
+        }
+
+        #insta {
+            position: relative;
+            top: -8%;
+            left: 5%;
+
+        }
+
+        #fb {
+            position: relative;
+            top: -4%;
+            left: 5%;
+        }
+
+        #gmail {
+            position: relative;
+            top: 0%;
+            left: 5%;
+        }
+
+        #github {
+            position: relative;
+            top: 4%;
+            left: 5%;
+        }
+
+        #insta {
+            color: red;
+            font-size: 170%;
+            text-decoration: none;
+        }
+
+        i {
+            position: relative;
+            right: 1rem;
+            top: 0.1rem;
+        }
+
+        /* i:hover{
+            font-size: 2rem;
+        } */
+        #fb {
+            color: blue;
+            font-size: 170%;
+            text-decoration: none;
+        }
+
+        #gmail {
+            color: purple;
+            font-size: 170%;
+            text-decoration: none;
+        }
+
+        #github {
+            color: brown;
+            font-size: 170%;
+            text-decoration: none;
+        }
+        /* #about{
+            
+        } */
+        #photo{
+            background-color: bisque;
+            width: 21rem;
+            height: 23rem;
+            border-radius: 12rem;
+            position: relative;
+            top: 5rem;
+            left: 4rem;
+            overflow: hidden;
+            border: 5px dotted black;
+            display: flex;
+            
+        }
+        #photo img{
+            width: 22rem;
+            height: 29rem;
+            position: relative;
+            top: -7rem;
+            right: 2rem;
+        }
+        /* #photo:hover img{
+            width: 22.3rem;
+            height: 29.4rem;
+        } */
+        #lines{
+            background-color: rgb(0, 0, 0,0.5);
+            width: 39rem;
+            height: 15rem;
+            position: relative;
+            left: 36rem;
+            top: -14rem;
+            padding: 20px;
+            font-size: 1.3rem;
+            border: 4px solid black;
+            color: chartreuse;
+            font-family: 'Rye', cursive;
+            word-spacing: 5px;
+            border-radius: 8px;
+        }
+        #about a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -12rem;
+            left: 43rem;
+            border: 4px solid black;
+            border-radius: 30rem;
+            text-decoration: none;
+            background-color: darkorange;
+            width: 25rem;
+            height: 4rem;
+            font-size: 2rem;
+            color: lavender;
+        }
+        #about a:hover{
+            font-size:2.1rem ;
+            background-color: tomato;
+            color: black;
+        }
+        @media only screen and (max-width:700px){
+            #about{
+                display: flex;
+                /* justify-content: center; */
+                align-items: center;
+                flex-direction: column;
+            }
+            #photo{
+                background-color: bisque;
+                width: 12rem;
+                height: 12rem;
+                border-radius: 12rem;
+                position: relative; 
+                /* top: 10%; 
+                left: 28%; */
+                left: 0rem;
+                overflow: hidden;
+                border: 5px dotted black;
+                /* display: inline; */
+                
+            }
+            #photo img{
+                width: 41rem;
+                height: 20rem;
+                position: relative;
+                top: -6rem;
+                right: 2rem;
+            }
+            
+            #lines{
+                background-color: rgb(0, 0, 0,0.5);
+                width: 16rem;
+                height: 7rem;
+                position: relative;
+                left: 0rem;
+                top: 7rem;
+                padding: 20px;
+                font-size: 0.6rem;
+                border: 4px solid black;
+                color: chartreuse;
+                font-family: 'Rye', cursive;
+                word-spacing: 5px;
+                border-radius: 8px;
+            }
+            #lines p{
+                margin: -10px;
+            }
+            #about a{
+                position: relative;
+                top: 9rem;
+                left: 0rem;
+                border: 4px solid black;
+                border-radius: 30rem;
+                text-decoration: none;
+                background-color: darkorange;
+                width: 16rem;
+                height: 3rem;
+                font-size: 1rem;
+                color: lavender;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand dheer" href="#homepage" style="color: red;"><i class="fab fa-dochub"></i>heer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="main" id="homepage">
+        <div id="logo">
+            <img src="dheerlogo.jpg" alt="">
+        </div>
+    <p><span id="listItem"></span></p>
+
+
+    </div>
+    <div class="main" id="about">
+        <div id="photo">
+            <img src="fab.jpeg" alt="Loading">
+        </div>
+        <div id="lines">
+           <p> Dhiraj Kumar is young and passionate Python coder,who has a good command in Python,HTML, CSS,C++,JavaScript. Also, he is a creative Web Designer. For more information, you can contact me via mail and social media.</p>
+        </div>
+        <a href="#contact" type="button">Contact Me</a>
+    </div>
+    <div class="main" id="contact">
+        <div id="SM">
+            <a href="https://www.instagram.com/dheerprajapat/" target="_blank" class="btns" id="insta" type="button"><i
+                    class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100006321704814" target="_blank" class="btns" id="fb"
+                type="button"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://twitter.com/DhirajK25721412" target="_blank" class="btns" id="gmail" type="button"><i
+                    class="fab fa-twitter"></i>Twitter</a>
+            <a href="https://github.com/dheerprajapat" target="_blank" class="btns" id="github" type="button"><i
+                    class="fab fa-github-square"></i>Git Hub</a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+<script>
+    let listItem = document.getElementById("listItem");
+    let items = ["Hello,  Bonjour नमस्ते. . .!","I Am Dhiraj Kumar !","WelCome To My Page.","Here You Can Know About Me.", "I am A Web Developer.","This is A Learning Purpose Website","Thanks For Visiting My Page"];
+    let typingDelay=100;
+    let eraseDelay=50;
+    let newTxtDelay=1000;
+    let textArrayIndex=0;
+    let charindex=0;
+    function type(){
+        if(charindex < items[textArrayIndex].length){
+            listItem.textContent+=items[textArrayIndex].charAt(charindex);
+        
+            charindex++;
+            setTimeout(type,typingDelay);
+        }
+        else{
+            setTimeout(erase,newTxtDelay)
+        }
+    }
+    function erase(){
+        if(charindex>0){
+            listItem.textContent=items[textArrayIndex].substring(0,charindex-1);
+            charindex--;
+            setTimeout(erase,eraseDelay);
+        }
+        else{
+            textArrayIndex++;
+            if(textArrayIndex >= items.length){
+                textArrayIndex=0;
+            }
+            setTimeout(type,typingDelay+1100)
+        }
+    }
+    type();
+</script>
+
+</html>
