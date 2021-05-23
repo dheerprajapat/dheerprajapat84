@@ -24,23 +24,23 @@
         body{
             font-family: 'Reggae One', cursive;
         }
-        
+        .bg-dark {
+            background-color: purple!important;
+        }
         .navbar{
             position: sticky;
             top: 0;
             z-index: 2;
-           
         }
         .main {
             width:100%;
             height: 100vh;
         }
-        .bg-dark {
-            background-color: purple!important;
-        }
+
         .navbar-brand i {
             left: -1px;
             color: gold;
+
         }
         p{
             margin-top: 1.8rem;
@@ -131,7 +131,9 @@
         #SM {
 
             width: 35rem;
-            height: 28rem;
+            height: 32rem;
+            padding: 2rem;
+    
             background-color: rgb(0, 0, 0, 0.6);
             display: flex;
             justify-content: center;
@@ -171,6 +173,9 @@
             position: relative;
             top: -8%;
             left: 5%;
+            color: red;
+            font-size: 170%;
+            text-decoration: none;
 
         }
 
@@ -178,52 +183,45 @@
             position: relative;
             top: -4%;
             left: 5%;
-        }
-
-        #gmail {
-            position: relative;
-            top: 0%;
-            left: 5%;
-        }
-
-        #github {
-            position: relative;
-            top: 4%;
-            left: 5%;
-        }
-
-        #insta {
-            color: red;
-            font-size: 170%;
-            text-decoration: none;
-        }
-
-        i {
-            position: relative;
-            right: 1rem;
-            top: 0.1rem;
-        }
-
-        /* i:hover{
-            font-size: 2rem;
-        } */
-        #fb {
             color: blue;
             font-size: 170%;
             text-decoration: none;
         }
 
-        #gmail {
+        #twitter{
+            position: relative;
+            top: 0%;
+            left: 5%;
             color: purple;
             font-size: 170%;
             text-decoration: none;
         }
 
         #github {
+            position: relative;
+            top: 4%;
+            left: 5%;
             color: brown;
             font-size: 170%;
             text-decoration: none;
         }
+        #mail {
+            position: relative;
+            top: 8%;
+            left: 5%;
+            color: orangered;
+            font-size: 170%;
+            text-decoration: none;
+        }
+       
+        i {
+            position: relative;
+            right: 1rem;
+            top: 0.1rem;
+        }
+
+        
+        
         /* #about{
             
         } */
@@ -291,7 +289,6 @@
             html{
                 font-size: 50%;
             }
-            
             #about{
                 display: flex;
                 /* justify-content: center; */
@@ -348,6 +345,7 @@
                 font-size: 1.5rem;
                 color: lavender;
             }
+            
         }
     </style>
 </head>
@@ -405,10 +403,11 @@
                     class="fab fa-instagram"></i>Instagram</a>
             <a href="https://www.facebook.com/profile.php?id=100006321704814" target="_blank" class="btns" id="fb"
                 type="button"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://twitter.com/DhirajK25721412" target="_blank" class="btns" id="gmail" type="button"><i
+            <a href="https://twitter.com/DhirajK25721412" target="_blank" class="btns" id="twitter" type="button"><i
                     class="fab fa-twitter"></i>Twitter</a>
             <a href="https://github.com/dheerprajapat" target="_blank" class="btns" id="github" type="button"><i
                     class="fab fa-github-square"></i>Git Hub</a>
+            <a href="mailto:dheerprajapat84@gmail.com" target="_blank" class="btns" id="mail" type="button"><i class="fas fa-envelope-open-text"></i>Send Me Mail</a>
         </div>
 
     </div>
