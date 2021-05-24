@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,23 +17,27 @@
 
     <title>My Web</title>
     <style>
-        html{
+        html {
             font-size: 85%;
             scroll-behavior: smooth;
         }
-        body{
+
+        body {
             font-family: 'Reggae One', cursive;
         }
+
         .bg-dark {
-            background-color: purple!important;
+            background-color: purple !important;
         }
-        .navbar{
+
+        .navbar {
             position: sticky;
             top: 0;
             z-index: 2;
         }
+
         .main {
-            width:100%;
+            width: 100%;
             height: 100vh;
         }
 
@@ -42,47 +46,58 @@
             color: gold;
 
         }
-        p{
+
+        p {
             margin-top: 1.8rem;
         }
-        #logo img{
+
+        #logo img {
             width: 22rem;
             height: 22rem;
         }
-        #logo img:hover{
+
+        #logo img:hover {
             /* position: relative;
             left: 5rem; */
             animation: logoAnim 1.5s infinite alternate-reverse;
-            
+
         }
-        @keyframes logoAnim{
-            0%{transform: rotate(0deg);}
-            100%{transform: rotate(360deg);}
+
+        @keyframes logoAnim {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
+
         #listItem {
             color: yellow;
             font-size: 4rem;
             font-weight: bold;
             font-family: "Sofia", sans-serif;
             border-right: 4px solid black;
-            
-            
+
+
         }
-        
-        #homepage p{
+
+        #homepage p {
             text-align: center;
         }
-        #listItem:hover{
+
+        #listItem:hover {
             color: red;
             cursor: pointer;
         }
-        
+
         #homepage {
             background-image: url("https://source.unsplash.com/1600x900/?marvel");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            
+
         }
 
 
@@ -133,7 +148,7 @@
             width: 35rem;
             height: 32rem;
             padding: 2rem;
-    
+
             background-color: rgb(0, 0, 0, 0.6);
             display: flex;
             justify-content: center;
@@ -188,7 +203,7 @@
             text-decoration: none;
         }
 
-        #twitter{
+        #twitter {
             position: relative;
             top: 0%;
             left: 5%;
@@ -205,6 +220,7 @@
             font-size: 170%;
             text-decoration: none;
         }
+
         #mail {
             position: relative;
             top: 8%;
@@ -213,19 +229,19 @@
             font-size: 170%;
             text-decoration: none;
         }
-       
+
         i {
             position: relative;
             right: 1rem;
             top: 0.1rem;
         }
 
-        
-        
+
+
         /* #about{
             
         } */
-        #photo{
+        #photo {
             background-color: bisque;
             width: 21rem;
             height: 23rem;
@@ -236,21 +252,23 @@
             overflow: hidden;
             border: 5px dotted black;
             display: flex;
-            
+
         }
-        #photo img{
+
+        #photo img {
             width: 22rem;
             height: 29rem;
             position: relative;
             top: -7rem;
             right: 2rem;
         }
+
         /* #photo:hover img{
             width: 22.3rem;
             height: 29.4rem;
         } */
-        #lines{
-            background-color: rgb(0, 0, 0,0.5);
+        #lines {
+            background-color: rgb(0, 0, 0, 0.5);
             width: 39rem;
             height: 15rem;
             position: relative;
@@ -264,7 +282,8 @@
             word-spacing: 5px;
             border-radius: 8px;
         }
-        #about a{
+
+        #about a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -280,21 +299,67 @@
             font-size: 2rem;
             color: lavender;
         }
-        #about a:hover{
-            font-size:2.1rem ;
+
+        #about a:hover {
+            font-size: 2.1rem;
             background-color: tomato;
             color: black;
         }
-        @media (max-width:1000px),(max-height:400px){
-            html{
+
+        
+
+        #video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("https://source.unsplash.com/1600x900/?flute");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #video video {
+
+            width: 100rem;
+            height: 44rem;
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            height: 62%;
+            margin-top: 6%;
+        }
+
+        .carousel-caption {
+            bottom: 4.25rem;
+        }
+
+        .carousel-indicators {
+            bottom: -19px;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: red;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgb(250, 18, 18);
+
+        }
+        @media (max-width:1000px),
+        (max-height:400px) {
+            html {
                 font-size: 50%;
             }
-            #about{
+
+            #about {
                 display: flex;
                 /* justify-content: center; */
                 align-items: center;
                 flex-direction: column;
             }
+
             #photo {
                 background-color: bisque;
                 width: 16rem;
@@ -306,16 +371,17 @@
                 border: 5px dotted black;
                 /* display: inline; */
             }
+
             #photo img {
-                width: 18rem;
+                width: 15rem;
                 height: 24rem;
                 position: relative;
                 top: -12rem;
                 right: 4rem;
             }
-            
-            #lines{
-                background-color: rgb(0, 0, 0,0.5);
+
+            #lines {
+                background-color: rgb(0, 0, 0, 0.5);
                 width: 39rem;
                 height: 16rem;
                 position: relative;
@@ -329,10 +395,12 @@
                 word-spacing: 5px;
                 border-radius: 8px;
             }
-            #lines p{
+
+            #lines p {
                 margin: -10px;
             }
-            #about a{
+
+            #about a {
                 position: relative;
                 top: 8rem;
                 left: 0rem;
@@ -345,7 +413,10 @@
                 font-size: 1.5rem;
                 color: lavender;
             }
-            
+            #video video {
+                width: 47rem;
+                height: 44rem;
+            }
         }
     </style>
 </head>
@@ -368,6 +439,9 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#video">Videos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
@@ -384,7 +458,7 @@
         <div id="logo">
             <img src="dheerlogo.jpg" alt="">
         </div>
-    <p><span id="listItem"></span></p>
+        <p><span id="listItem"></span></p>
 
 
     </div>
@@ -393,71 +467,169 @@
             <img src="fab.jpeg" alt="Loading">
         </div>
         <div id="lines">
-           <p> Dhiraj Kumar is young and passionate Python coder,who has a good command in Python,HTML, CSS,C++,JavaScript. Also, he is a creative Web Designer. For more information, you can contact me via mail and social media.</p>
+            <p> Dhiraj Kumar is young and passionate Python coder,who has a good command in Python,HTML,
+                CSS,C++,JavaScript. Also, he is a creative Web Designer. For more information, you can contact me via
+                mail and social media.</p>
         </div>
         <a href="#contact" type="button">Contact Me</a>
     </div>
-    <div class="main" id="contact">
-        <div id="SM">
-            <a href="https://www.instagram.com/dheerprajapat/" target="_blank" class="btns" id="insta" type="button"><i
-                    class="fab fa-instagram"></i>Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100006321704814" target="_blank" class="btns" id="fb"
-                type="button"><i class="fab fa-facebook"></i>Facebook</a>
-            <a href="https://twitter.com/DhirajK25721412" target="_blank" class="btns" id="twitter" type="button"><i
-                    class="fab fa-twitter"></i>Twitter</a>
-            <a href="https://github.com/dheerprajapat" target="_blank" class="btns" id="github" type="button"><i
-                    class="fab fa-github-square"></i>Git Hub</a>
-            <a href="mailto:dheerprajapat84@gmail.com" target="_blank" class="btns" id="mail" type="button"><i class="fas fa-envelope-open-text"></i>Send Me Mail</a>
+    <div class="main" id="video">
+        <!-- <video controls width="12rem" height="2rem">
+            <source src="Tu_Mile_Dil_Khile.mp4" >
+       </video> -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <video controls width="12rem" height="2rem" id="vid1">
+                        <source src="Tu_Mile_Dil_Khile.mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:red">Tu Mile Dil Khile</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <video controls width="12rem" height="2rem" id="vid2">
+                        <source src="Teri_Mitti.mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:red">Teri Mitti</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <video controls width="12rem" height="2rem" id="vid3">
+                        <source src="Lav_Kush.mp4">
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color:red">Ramayan-Lav Khush Song</h5>
+
+                    </div>
+                </div>
+                    <div class="carousel-item ">
+                        <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                        <video controls width="12rem" height="2rem" id="vid4">
+                            <source src="Saare_Jaha_Se_Achcha.mp4">
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="color:red">Saare Jahan Se Achcha</h5>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="main" id="contact">
+            <div id="SM">
+                <a href="https://www.instagram.com/dheerprajapat/" target="_blank" class="btns" id="insta"
+                    type="button"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100006321704814" target="_blank" class="btns" id="fb"
+                    type="button"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/DhirajK25721412" target="_blank" class="btns" id="twitter" type="button"><i
+                        class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://github.com/dheerprajapat" target="_blank" class="btns" id="github" type="button"><i
+                        class="fab fa-github-square"></i>Git Hub</a>
+                <a href="mailto:dheerprajapat84@gmail.com" target="_blank" class="btns" id="mail" type="button"><i
+                        class="fas fa-envelope-open-text"></i>Send Me Mail</a>
+            </div>
+
         </div>
 
-    </div>
 
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
 </body>
 <script>
     let listItem = document.getElementById("listItem");
-    let items = ["Hello,  Bonjour नमस्ते. . . !","I Am Dhiraj Kumar . . !","WelCome To My Page . . !","Here You Can Know About Me . . !", "I am A Web Developer . . !","I Am A Flutist . . !","This is A Learning Purpose Website .","Thanks For Visiting My Page . . !"];
-    let typingDelay=100;
-    let eraseDelay=50;
-    let newTxtDelay=1000;
-    let textArrayIndex=0;
-    let charindex=0;
-    function type(){
-        if(charindex < items[textArrayIndex].length){
-            listItem.textContent+=items[textArrayIndex].charAt(charindex);
-        
+    let items = ["Hello,  Bonjour नमस्ते. . .!", "I Am Dhiraj Kumar !", "WelCome To My Page.", "Here You Can Know About Me.", "I am A Web Developer.", "This is A Learning Purpose Website", "Thanks For Visiting My Page"];
+    let typingDelay = 100;
+    let eraseDelay = 50;
+    let newTxtDelay = 1000;
+    let textArrayIndex = 0;
+    let charindex = 0;
+    function type() {
+        if (charindex < items[textArrayIndex].length) {
+            listItem.textContent += items[textArrayIndex].charAt(charindex);
+
             charindex++;
-            setTimeout(type,typingDelay);
+            setTimeout(type, typingDelay);
         }
-        else{
-            setTimeout(erase,newTxtDelay)
+        else {
+            setTimeout(erase, newTxtDelay)
         }
     }
-    function erase(){
-        if(charindex>0){
-            listItem.textContent=items[textArrayIndex].substring(0,charindex-1);
+    function erase() {
+        if (charindex > 0) {
+            listItem.textContent = items[textArrayIndex].substring(0, charindex - 1);
             charindex--;
-            setTimeout(erase,eraseDelay);
+            setTimeout(erase, eraseDelay);
         }
-        else{
+        else {
             textArrayIndex++;
-            if(textArrayIndex >= items.length){
-                textArrayIndex=0;
+            if (textArrayIndex >= items.length) {
+                textArrayIndex = 0;
             }
-            setTimeout(type,typingDelay+1100)
+            setTimeout(type, typingDelay + 1100)
         }
     }
     type();
+    (function () {
+        var videos = [
+            document.getElementById("vid1"),
+            document.getElementById("vid2"),
+            document.getElementById("vid3"),
+            document.getElementById("vid4"),
+
+        ];
+
+        function stopOthers() {
+            var id = this.id, i = 0;
+            for (var j = videos.length; i < j; i++) {
+                if (videos[i].id !== id) {
+                    videos[i].pause();
+                }
+            }
+        }
+
+        var i = 0;
+        for (var j = videos.length; i < j; i++) {
+            videos[i].addEventListener("play", stopOthers, false);
+        }
+    })();
+
 </script>
 
 </html>
